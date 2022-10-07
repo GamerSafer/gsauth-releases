@@ -7,6 +7,8 @@
 - Velocity 1.18.2+
 - Bungeecord 1.18.2+
 - LuckPerms
+- MySQL / MariaDB
+- A open port to communicate with our API
 - _Optional:_ ProtocolLib for onboarding room holograms.
 - _Optional:_ PlaceholderAPI for placeholders.
 - _Optional:_ Multiverse-Core to manage the onboarding room.
