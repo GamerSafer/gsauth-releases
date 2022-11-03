@@ -12,7 +12,6 @@
 - _Optional:_ ProtocolLib for onboarding room holograms.
 - _Optional:_ PlaceholderAPI for placeholders.
 - _Optional:_ Multiverse-Core to manage the onboarding room.
-- _Optional:_ LiteBans to sync punishments.
 
 ## Commands
 
