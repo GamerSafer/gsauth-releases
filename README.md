@@ -1,5 +1,9 @@
 # GamerSafer Authentication plugin for Minecraft Java Edition servers. 
 
+**To get a GSAuth API Key and Guild ID to activate this plugin, you will need an Iron, Gold, or Diamond tiered GSAuth plan:**
+
+[**New GSAuth Signup**](https://checkout.gamersafer.com/product/8bf26434-24b2-4662-8efb-ca17df47eaa3/plans)
+
 ## Dependencies
 
 - Java 16 or newer
