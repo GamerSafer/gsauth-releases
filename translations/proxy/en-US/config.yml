@@ -1,0 +1,56 @@
+backend:
+  authentication-save-timer: 1
+  database:
+    type: SqlLite
+    database: gsauth
+    mysql-configuration:
+      address: localhost:3306
+      user: mysqluser
+      password: mysqlpass
+verbose-logging: true
+verification-state-permissions:
+  allow-commands: false
+  command-whitelist:
+    - gslink
+    - gsverify
+    - warp
+    - rtp
+messages:
+  guildjoin-success:
+    actionbar-enabled: false
+    actionbar-message: ''
+    bossbar-enabled: false
+    bossbar-message: ''
+    bossbar-color: PURPLE
+    bossbar-style: SOLID
+    chat-enabled: true
+    chat-message: <color:#dedaff>Success! You have authenticated and now have all
+      your permissions.
+    title-enabled: true
+    title-message: <color:#dedaff>Success!
+    subtitle-message: <color:#9a91e5>Enjoy the server.
+    title-time: 10
+    commands-enabled: false
+    commands: []
+  reauth-success:
+    actionbar-enabled: false
+    actionbar-message: ''
+    bossbar-enabled: false
+    bossbar-message: ''
+    bossbar-color: PURPLE
+    bossbar-style: SOLID
+    chat-enabled: true
+    chat-message: <color:#dedaff>Success! You have authenticated and now have all
+      your permissions.
+    title-enabled: true
+    title-message: <color:#dedaff>Success!
+    subtitle-message: <color:#9a91e5>Enjoy the server.
+    title-time: 10
+    commands-enabled: false
+    commands: []
+  kick-unlinked-screen: |-
+    <color:#d84684><b>Your GamerSafer account was unlinked from this server!<reset>
+    
+    <color:#d84684>Please rejoin to link your GS account.
+  action-denied: <color:#d84684><b>You cannot do this until you authenticate with
+    the GamerSafer app.

@@ -1,0 +1,92 @@
+local:
+  authentication-flow:
+    authentication-book:
+      has-exit-button: true
+      description: Welcome! Please authenticate with the notification sent to your
+        phone.
+      verify-button: <blue><bold>  Click to Confirm
+      loading-title: <gray><bold>      Loading...
+      failed-title: <red><bold> Failed! Try again.
+    invite-menu:
+      has-exit-option: true
+      exit-option-description: <!italic><white>Click Swap Hands to close this inventory.
+      menu-title: Scan QR then click Emerald
+      bossbar-title: <!italic><gray>Hover over the book
+      book-name: <!italic><white><bold>Info Book
+      book-lore:
+        - <!italic><white>Authenticate using the GamerSafer App
+        - ''
+        - <!italic><white>Scan the QR code on the right
+        - <!italic><white>Click the emerald block when completed!
+      confirm-name: <!italic><white><bold>Confirm Authentication
+      confirm-lore:
+        - <!italic><white>Click to confirm your authentication
+      has-bossbar: true
+  verification-state-permissions:
+    allow-chat: false
+    allow-movement: true
+    allow-block-place: false
+    allow-block-break: false
+    allow-interact: false
+    allow-interact-entity: false
+    allow-item-pickup-and-drop: false
+    is-invincible: true
+    allow-inventory-click: true
+  single-server: true
+  auto-deop: true
+backend:
+  authentication-save-timer: 1
+  database:
+    type: SqlLite
+    database: gsauth
+    mysql-configuration:
+      address: localhost:3306
+      user: mysqluser
+      password: mysqlpass
+verbose-logging: true
+verification-state-permissions:
+  allow-commands: false
+  command-whitelist:
+    - gslink
+    - gsverify
+    - warp
+    - rtp
+messages:
+  guildjoin-success:
+    actionbar-enabled: false
+    actionbar-message: ''
+    bossbar-enabled: false
+    bossbar-message: ''
+    bossbar-color: PURPLE
+    bossbar-style: SOLID
+    chat-enabled: true
+    chat-message: <color:#dedaff>Success! You have authenticated and now have all
+      your permissions.
+    title-enabled: true
+    title-message: <color:#dedaff>Success!
+    subtitle-message: <color:#9a91e5>Enjoy the server.
+    title-time: 10
+    commands-enabled: false
+    commands: []
+  reauth-success:
+    actionbar-enabled: false
+    actionbar-message: ''
+    bossbar-enabled: false
+    bossbar-message: ''
+    bossbar-color: PURPLE
+    bossbar-style: SOLID
+    chat-enabled: true
+    chat-message: <color:#dedaff>Success! You have authenticated and now have all
+      your permissions.
+    title-enabled: true
+    title-message: <color:#dedaff>Success!
+    subtitle-message: <color:#9a91e5>Enjoy the server.
+    title-time: 10
+    commands-enabled: false
+    commands: []
+  kick-unlinked-screen: |-
+    <color:#d84684><b>Your GamerSafer account was unlinked from this server!<reset>
+    
+    <color:#d84684>Please rejoin to link your GS account.
+  action-denied: <color:#d84684><b>You cannot do this until you authenticate with
+    the GamerSafer app.

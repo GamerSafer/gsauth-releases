@@ -1,0 +1,63 @@
+local:
+  logs:
+    player-deoping: Deoping player {player}
+    plugin-loaded-with-proxy: GSAuth Plugin loaded in server network / proxy mode.
+backend:
+  commands:
+    no-permission: <red>You are not permitted to use this command!
+    console-only: <red>This command must be run from console!
+    not-online: <red>Player {player} is not online!
+    player-not-found: <red>Could not find a player by that name!
+    already-linked: Already linked
+    linking-started: Account linking process started
+    not-linked: Player {player} has not linked their account to the server
+    internal-error: An internal error occurred
+    platform-invalid: These commands can only be run in-game or via the proxy console.
+    reloading-frontend: Reloading frontend proxy servers, note however a player
+      must be online!
+  logs:
+    send-gs-data: Sending GS data of {player} to server '{server}'
+    send-gs-required-data: Sending GS required data of {player} to server '{server}'
+    open-verification-book: Sending open verification book on {player} to server
+      '{server}'
+    close-verification-book: Sending close verification book on {player} to server
+      '{server}'
+    open-scan-menu: Sending open scan menu on {player} to server '{server}'
+    close-scan-menu: Sending close scan menu book on {player} to server '{server}'
+    player-joined-first-time: Player {player} has joined for the first time.
+    player-verification-stage: Player {player}'s has requested authentication through
+      {stage}
+    player-link-successful: Player {player} has successfully linked their account
+      to the server
+    player-link-failed: Player {player} has failed to link their account to the
+      server
+    player-link-error: Error while handling invite for player {player}!
+    player-unlinked-successful: Player {player}'s account was successfully unlinked
+      from the server
+    player-auth-successful: Player {player} has successfully authenticated with
+      GamerSafer account
+    player-auth-failed: Player {player} failed to authenticate with GamerSafer account
+    player-auth-error: Error while handling verify for player {player}!
+    db-type-not-implemented: 'Failed to establish a connection with the database:
+         Database type {type} not fully implemented!'
+    db-failed-to-connect: Failed to establish a connection with the database. Did
+      you set it up in the config.yml?
+    db-failed-fixup: Failed to fixup old database layout
+    db-failed-migration: Error while executing migration {migration}
+    db-executing-migration: Executing migration {migration}
+    key-manager-load-failed: 'KeyManager: Failed to load keys: {exception}'
+    key-manager-importing: 'KeyManager: Importing keys'
+    key-manager-import-failed: 'KeyManager: Failed to import keys: {exception}'
+    key-manager-loading-keys: 'KeyManager: Loading keys'
+    plugin-loaded-standalone: GSAuth Plugin loaded in single server / standalone
+      mode.
+    missing-api-key-or-guild-id: GSAuth Plugin is installed and using local data
+      but NOT active with the service! Please put your API Key AND Guild ID in
+      keyinput.txt and restart the server.
+    api-connection-successful: Connection to API successful
+  snip-playername: player name
+plugin-prefix: '[GSAuth] '
+logs:
+  plugin-init-failed: Failed to initialize Plugin! Look for problems above.
+  reloaded: Reloaded!
+  shutdown: Shutting down...
