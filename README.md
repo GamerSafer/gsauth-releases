@@ -14,3 +14,5 @@ GSAuth for Minecraft is plugin for Spigot, Paper, Bungee, and Velocity servers t
 - Use GSAuth for ban appeals to hold previously-punished players accountable during a probation or grace period
 
 To learn more about GamerSafer or to purchase a GSAuth license for as little as $5/month, visit https://minecraft.gamersafer.com/
+
+The GSAuth plugins are derivatives of GPLv3 licensed software, and by necessity also has the GPLv3 license. The backend GamerSafer services, app, and other tech may have other licenses, and GPLv3 may not apply to them.
